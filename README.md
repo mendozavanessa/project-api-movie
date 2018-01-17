@@ -72,4 +72,6 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 
 [trello]: https://trello.com/b/zDPbf5a3/plan-de-acciones-hackaton
 
-__EXPECTATIVAS AL DÍA FINAL:__ Esperamos tener un producto funcional y brindar una buena experiencia a nuestros futuros usuarios.
+### EXPECTATIVAS
+
+Esperamos tener un producto funcional y brindar una buena experiencia a nuestros futuros usuarios.
