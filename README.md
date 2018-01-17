@@ -28,7 +28,7 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 
 ![planes](assets/docs/primer-dia-planes.jpg)
 
-+ Una vez establecidas las tres preguntas importantes *¿Cúal es nuestro objetivo?*, *¿Qué necesidad queremos cubrir?, ¿A quién  esta dirigida?* cada una hizo un sketch a lapiz de como debería ser la vista principal, luego de ver las ideas de todas elegimos esta.
++ Una vez establecidas nuestras tres preguntas importantes *¿Cúal es nuestro objetivo?*, *¿Qué necesidad queremos cubrir?, ¿A quién  esta dirigida?* cada una hizo un sketch a lapiz de como debería ser la vista principal, luego de ver las ideas de todas elegimos esta.
 
 > hecho por Vanessa Mendoza
 ![sketch-elegido](assets/docs/sketch-elegido.jpg)
