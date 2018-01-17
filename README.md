@@ -9,7 +9,7 @@
 
 ## INTRODUCCIÓN
 
-En la actualidad, hay muchas páginas que nos permiten tener acceso a nuestra película favorita en cualquier momento y lugar, pero...
+En la actualidad, hay muchas páginas que nos permiten tener acceso a nuestras películas favorita en cualquier momento y lugar, pero...
 
 ¿y si no tienes idea de que película quieres ver? o ¿buscas esa película que te haga llorar a mares o te haga sentir miedo hasta de tu propia sombra?
 Pues para eso tienes a __PELIMOTION.__
@@ -22,17 +22,17 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 
 #### Primer Día
 
-+ Realizamos una lluvia de ideas para encontrar la problematica que buscamos resolver.
-+ Luego de esto fuimos escogiendo las ideas que más nos gustaban, fuimos colocandolo en nuestra pizarra.
++ Realizamos una lluvia de ideas para encontrar la problemática que buscamos resolver.
++ Luego de esto fuimos escogiendo las ideas que más nos gustaban, colocándolas en nuestra pizarra.
 
 ![planes](assets/docs/primer-dia-planes.jpg)
 
-+ Una vez establecido las tres preguntas importantes *¿nuestro objetivo?*, *¿que necesidad queremos cubrir?, ¿a quien esta dirigida?* cada una hizo un sketch a lapiz de como debería ser la vista principal, luego de ver las ideas de todas elegimos esta.
++ Una vez establecidas las tres preguntas importantes *¿Cúal es nuestro objetivo?*, *¿Qué necesidad queremos cubrir?, ¿A quién  esta dirigida?* cada una hizo un sketch a lapiz de como debería ser la vista principal, luego de ver las ideas de todas elegimos esta.
 
 > hecho por Vanessa Mendoza
 ![sketch-elegido](assets/docs/sketch-elegido.jpg)
 
-+ Empezamos nuestros research con una pequeña [encuesta online][encuesta] hecho por Aylin Espichan, obteniendo una data en base a 38 colaboradores.
++ Empezamos nuestro research con una pequeña [encuesta online][encuesta] hecha por Aylin Espichan, obteniendo una data en base a 38 colaboradores.
 
 [encuesta]: https://goo.gl/forms/zQ277pSoObRqNnjy1
 
@@ -40,7 +40,7 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 
 ![data encuesta](assets/docs/data-encuesta.png)
 
-+ con nuestras ideas en orden y una imagen inicial de nuestra página, lo siguiente fue el [prototipo][prototipo] inicial para empezar el proceso de desarrollo, que fue hecho por Ruth Matos
++ Con nuestras ideas en orden y una imagen inicial de nuestra página, lo siguiente fue el [prototipo][prototipo] inicial para empezar el proceso de desarrollo, que fue hecho por Ruth Matos
 
 [prototipo]: https://share.proto.io/J0Q4QI/
 
@@ -68,8 +68,8 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 
 ![login](assets/docs/prototipo/modal-login.png)
 
-+ acabandose el día creamos un [tablero][trello] en trello para mantener un registro de que tarea iremos realizando cada una y el repositorio inicial, hecho por Aurora Vasquez
++ Por último creamos un [tablero][trello] en trello para mantener un registro de las tareas que iremos realizando cada una. Además tambien se creo el repositorio oficial, hecho por Aurora Vasquez.
 
 [trello]: https://trello.com/b/zDPbf5a3/plan-de-acciones-hackaton
 
-__EXPECTATIVAS AL DÍA FINAL:__ Esperamos que el día viernes tengamos un producto funcional y brindar una buena experiencia a nuestros futuros usuarios.
+__EXPECTATIVAS AL DÍA FINAL:__ Esperamos tener un producto funcional y brindar una buena experiencia a nuestros futuros usuarios.
