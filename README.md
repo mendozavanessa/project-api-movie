@@ -1,5 +1,6 @@
 # HACKATON LABORATORIA: __PeliMotion__
 
+
 ## Equipo conformado por:
 
 + RUTH MATOS
@@ -68,8 +69,10 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 
 ![login](assets/docs/prototipo/modal-login.png)
 
-+ acabandose el día creamos un [tablero][trello] en trello para mantener un registro de que tarea iremos realizando cada una y el repositorio inicial, hecho por Aurora Vasquez
++ acabandose el día creamos un [tablero][trello] en trello para mantener un registro de que tarea iremos realizando cada una y el repositorio inicial, hecho por Aurora Vasquez en donde cada una tendrá una rama asignada.
 
 [trello]: https://trello.com/b/zDPbf5a3/plan-de-acciones-hackaton
 
-__EXPECTATIVAS AL DÍA FINAL:__ Esperamos que el día viernes tengamos un producto funcional y brindar una buena experiencia a nuestros futuros usuarios.
+![trello](assets/docs/trello.png)
+
+__EXPECTATIVAS AL DÍA VIERNES:__ Esperamos que el día viernes tengamos un producto funcional y brindar una buena experiencia a nuestros futuros usuarios.
