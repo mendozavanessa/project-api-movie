@@ -1,12 +1,19 @@
-# HACKATON LABORATORIA: 
+# HACKATON LABORATORIA: __PeliMotion__
 
 ## Equipo conformado por:
+
 + RUTH MATOS
 + AURORA VASQUEZ
 + VANESSA MENDOZA
 + AYLIN ESPICHAN
 
-### Primer Día:
+## INTRODUCCIÓN
+
+---
+### PLANIFICACIÓN
+
+#### Primer Día:
+
 + Realizamos una lluvia de ideas para encontrar la problematica que buscamos resolver.
 + Luego de esto fuimos escogiendo las ideas que más nos gustaban, fuimos colocandolo en nuestra pizarra.
 
@@ -24,6 +31,30 @@
 + con nuestras ideas en orden y una imagen inicial de nuestra página, lo siguiente fue el [prototipo][prototipo] inicial para empezar el proceso de desarrollo, que fue hecho por Ruth Matos
 
 [prototipo]: https://share.proto.io/J0Q4QI/
+
+~. __Vista Inicial:__
+
+![vista inicial](assets/docs/prototipo/vista-inicial.png)
+
+~. __Vista Resultados__
+
+![vista resultados](assets/docs/prototipo/vista-resultado.png)
+
+~. __Vista Selección 1:__
+
+![vista selección 1](assets/docs/prototipo/vista-seleccion-1.png)
+
+~. __Vista Selección - Mi cuenta:__
+
+![selección cuenta](assets/docs/prototipo/vista-seleccion-mi-cuenta.png)
+
+~. __Modal SignUp:__
+
+![signup](assets/docs/prototipo/modal-signup.png)
+
+~. __Modal login:__
+
+![login](assets/docs/prototipo/modal-login.png)
 
 + acabandose el día creamos un [tablero][trello] en trello para mantener un registro de que tarea iremos realizando cada una y el repositorio inicial, hecho por Aurora Vasquez
 
