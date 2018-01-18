@@ -1,23 +1,41 @@
+*{
+  font-family: 'Roboto', sans-serif;
 
-.media-carousel img
-{
-  width: 50px;
-  height: 100px
 }
-/* End carousel */
+/* Navbar */
+.navbar-header{
+  padding-bottom: 1.5em;
+}
 .nav-style{
-    background: #467FD7;
+  background: #467FD7;
 }
 .logo{
-    font-family: 'Righteous', cursive;
-    font-size: 1.8em;
-    color: #fff;
+  font-family: 'Righteous', cursive;
+  font-size: 1.8em;
+  color: #fff;
 }
 .logo-img{
-    height: 7vh;
-    padding-bottom: .3em;
+  height: 7vh;
+  padding-bottom: .3em;
+}
+/* filter */
+.title{
+  font-size: 2.5em;
+  /* font-style:italic; */
+  /* font-family: 'Roboto Condensed', sans-serif; */
+}
+.emotion-pic{
+  width: 4em;
+}
+/* carousel */
+.color{
+  background:#467FD7;
+  margin-bottom: 0;
+  padding-top: 1.5em;  
+}
 
-}
-.navbar-header{
-    padding-bottom: .8em;
-}
+@media (min-width: 768px){
+  .emotion-pic{
+    width: 7em;
+  }
+} 
