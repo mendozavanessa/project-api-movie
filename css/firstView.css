@@ -22,15 +22,58 @@ body {
   color: #fff;
   text-decoration: none;
 }
+/* opciones del navegador */
+.desktop-menu {
+  font-family: 'Righteous', cursive;
+  list-style: none;
+  text-decoration: none;
+}
+.desktop-menu li a {
+  color: #fff;
+  display: flex;
+  padding: 1em;
+}
 /* Sección principal */
 .flexbox {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .poster-container {
   outline: 1px solid red;
   width: 60vw;
   height: 50vh;
+}
+.favorite-btn {
+  display: inline-block;
+}
+.heart-icon {
+  background-image: url('../assets/img/heart-icon.svg');
+  width: 20px;
+  height: 20px;
+}
+/* Media queries */
+@media (min-width: 576px) {
+  .poster-container {
+    outline: 1px solid blue;
+    width: 60vw;
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .poster-container {
+    outline: 1px solid green;
+    width: 35vw;
+    height: 55vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .poster-container {
+    outline-color: orange;
+    width: 30vw;
+    height: 60vh;
+  }
 }
