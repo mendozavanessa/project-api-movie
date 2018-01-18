@@ -1,1 +1,23 @@
 
+.media-carousel img
+{
+  width: 50px;
+  height: 100px
+}
+/* End carousel */
+.nav-style{
+    background: #467FD7;
+}
+.logo{
+    font-family: 'Righteous', cursive;
+    font-size: 1.8em;
+    color: #fff;
+}
+.logo-img{
+    height: 7vh;
+    padding-bottom: .3em;
+
+}
+.navbar-header{
+    padding-bottom: .8em;
+}
