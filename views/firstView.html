@@ -7,32 +7,46 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/firstView.css">
+    <link rel="stylesheet" href="../css/main.css">
   </head>
   <body>
-   <header>
-     <nav class="navigator navbar">
-       <div class="container">
-         <div class="row">
-           <div class="col-xs-6 col-sm-4 push-left col-md-3">
-             <div class="navbar-header navbar-brand">
-               <a href="#" class="title"><img src="../assets/img/movie.png" alt="" class="brand">Pelimotion</a>
-             </div>
-           </div>
-           <div class="col-xs-6 col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-6">
-              <div class="navbar-nav collapse">
-                  <ul class="desktop-menu navbar-nav right-navbar">
-                    <li>
-                      <a href="#">Sign up</a>
-                     </li>
-                    <li>
-                      <a href="#">Log in</a></li>
-                  </ul>
-                </div>
-           </div>
-         </div>
-       </div>
-     </nav>
-   </header>
+  <!--NAVBAR-->
+  <nav class="container-fluid">
+      <div class="row">
+        <div class="navbar navbar-default nav-style">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand pull-right" href="#">
+                <p class="logo">
+                  <img alt="Brand" class="logo-img" src="../assets/img/movie.png">Pelimotion</p>
+              </a>
+              <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Menu List -->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <!-- <li class="active">
+                  <a href="#">Ingresa</a>
+                </li>
+                <li>
+                  <a href="#about">Registrate</a>
+                </li> -->
+                <li>
+                  <a id="login" class=""><i class="fa fa-google-plus-square" aria-hidden="true"></i> Ingresa</a>              
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--NAVBAR END-->
    <section>
      <div class="container">
        <div class="row">

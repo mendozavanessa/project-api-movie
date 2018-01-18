@@ -6,23 +6,44 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-/* barra de navegación*/
+/* Navbar */
+.navbar-header{
+  padding-bottom: 1.5em;
+}
+.nav-style{
+  background: #467FD7;
+}
+.logo{
+  font-family: 'Righteous', cursive;
+  font-size: 1.8em;
+  color: #fff;
+}
+.logo-img{
+  height: 7vh;
+  padding-bottom: .3em;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+/* barra de navegación
 .navigator {
-  background-color: #2080a0;
+  background-color: #467FD7;
+  height: 14vh;
 }
-/* logo del navegador */
+/* logo del navegador 
 .brand {
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 60px;
 }
-/*Titulo*/
+/*Titulo
 .title {
   font-family: 'Righteous', cursive;
-  font-size: 30px;
+  font-size: 38px;
   color: #fff;
   text-decoration: none;
 }
-/* opciones del navegador */
+/* opciones del navegador 
 .desktop-menu {
   font-family: 'Righteous', cursive;
   list-style: none;
