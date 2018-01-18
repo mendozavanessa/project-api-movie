@@ -1,6 +1,5 @@
 *{
   font-family: 'Roboto', sans-serif;
-
 }
 /* Navbar */
 .navbar-header{
@@ -17,6 +16,10 @@
 .logo-img{
   height: 7vh;
   padding-bottom: .3em;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
 }
 /* filter */
 .title{
