@@ -4,40 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>PeliMotion</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/firstView.css">
   </head>
   <body>
-    
-  <main>
-    <div class="container-fluid">
-      <div class="row color">
-        <div class="col-xs-12 md-6">
-          <nav class="">
-            <div class="col-xs-2">
-              <img src="../assets/img/logo.jpg" alt="" class="img-responsive">
-            </div>
-            <div class="title-container col-xs-auto">
-              <h2>PELIMOTION</h2>
-            </div>
-            <div class="menu-container col-xs-2 ">
-              hola
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-offset-xs-1 col-xs-9 col-md-12">
-          <section>
-            <div class="poster-container">
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-  </main>
+   <header>
+     <nav class="navigator navbar navbar-default">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-xs-10 col-sm-8 col-md-8">
+             <div class="navbar-header navbar-brand">
+               <a href="#" class="title"><img src="../assets/img/movie.png" alt="" class="brand">Pelimotion</a>
+             </div>
+           </div>
+           <div class="col-sm-4 col-md-4">
+              <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav right-navbar">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Sign up</a>
+                     </li>
+                    <li>
+                      <a href="#">Log in</a></li>
+                  </ul>
+                </div>
+           </div>
+         </div>
+       </div>
+     </nav>
+   </header>
+   <section class="flexbox">
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="poster-container"></div>
+         </div>
+       </div>
+     </div>
+   </section>
+  
 
-    <script type="text/javascript" src="../vendors/jquery/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../js/firstView.js"></script>
+        <!-- enlazando libreria JQuery -->
+      <script type="text/javascript" src="../vendors/jquery/js/jquery-3.2.1.min.js"></script>
+        <!-- enlazando recurso de bootstrap -->
+      <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+        <!-- enlazando nuestro archivo js -->
+      <script type="text/javascript" src="../js/firstView.js"></script>
+  
   </body>
 </html>

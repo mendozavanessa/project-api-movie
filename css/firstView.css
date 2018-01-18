@@ -4,14 +4,33 @@
   padding: 0;
 }
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-.color {
-  background-color: antiquewhite;
+/* barra de navegación*/
+.navigator {
+  background-color: #2080a0;
+}
+/* logo del navegador */
+.brand {
+  height: 30px;
+  width: 30px;
+}
+/*Titulo*/
+.title {
+  font-family: 'Righteous', cursive;
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+/* Sección principal */
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .poster-container {
-  background-color: aqua;
-  padding: 2em;
-  height: 60vh;
-  width: 80vw;
+  outline: 1px solid red;
+  width: 60vw;
+  height: 50vh;
 }
