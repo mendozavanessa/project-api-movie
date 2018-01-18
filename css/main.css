@@ -1,1 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+.inline-block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.logo {
 
+}
+.logo img {
+
+}
+.logo h1 {
+
+}
+li {
+  list-style: none;
+}
