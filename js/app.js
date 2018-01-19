@@ -62,7 +62,7 @@ $(document).ready(function() {
         var image = response.Poster;
         console.log(image);
         if (image !== 'N/A') {
-          $('.images').append('<img class="thumbnail" src="' + image + '"></img>');
+          $('.images').append('<div><div class="col-md-4"><img class="thumbnail" src="' + image + '"></img></div></div>');
         }
       });
     }
@@ -70,26 +70,31 @@ $(document).ready(function() {
   $('#alegria').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.alegria));
-    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[0] + '</h1>');
+    $('.text').append('<h1 class="white"> Peliculas que causan ' + movieArrayData[0] + '</h1>');
   });
   $('#aventura').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.aventura));
-    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[1] + '</h1>');
+    $('.text').append('<h1 class="white"> Peliculas que causan ' + movieArrayData[4] + '</h1>');
   });
   $('#miedo').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.miedo));
-    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[2] + '</h1>');
+    $('.text').append('<h1 class="white"> Peliculas que causan ' + movieArrayData[3] + '</h1>');
   });
   $('#reflexion').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.reflexion));
-    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[3] + '</h1>');
+    $('.text').append('<h1 class="white"> Peliculas que causan ' + movieArrayData[5] + '</h1>');
   });
   $('#romance').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.romance));
-    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[4] + '</h1>');
+    $('.text').append('<h1 class="white"> Peliculas que causan ' + movieArrayData[2] + '</h1>');
+  });
+  $('#adrenalina').on('click', function() {
+    $('.text').text(' ');
+    apiCall(Object.values(movieData.adrenalina));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[1] + '</h1>');
   });
 });

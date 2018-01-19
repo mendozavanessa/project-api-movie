@@ -21,21 +21,28 @@
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
-
+body {
+  background-color: rgba(160, 192, 224, 0.1);
+}
 /* filter */
 .title{
   font-size: 1.5em;
 }
 .emotion-pic{
-  width: 3.5em;
+  width: 2.8em;
 }
 /* carousel */
 .color{
   background:#467FD7;
   margin-bottom: 0;
-  padding-top: 1.5em;  
+  padding-top: 1.5em;
 }
-
+.image {
+  width: fit-content;
+}
+.white {
+  color: white;
+}
 @media (min-width: 768px){
   .emotion-pic{
     width: 7em;
@@ -43,4 +50,4 @@
   .title{
     font-size: 2.5em;
   }
-} 
+}
