@@ -54,6 +54,7 @@ $(document).ready(function() {
   var movieArrayData = Object.keys(movieData);
   console.log(movieArrayData);
   function apiCall(arr) {
+    $('.images').text(' ');
     for (var i = 0; i < arr.length; i++) {
       console.log(arr);
       $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(arr[i]) + '&apikey=a498e26d').then(function(response) {
@@ -67,18 +68,28 @@ $(document).ready(function() {
     }
   }
   $('#alegria').on('click', function() {
+    $('.text').text(' ');
     apiCall(Object.values(movieData.alegria));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[0] + '</h1>');
   });
   $('#aventura').on('click', function() {
+    $('.text').text(' ');
     apiCall(Object.values(movieData.aventura));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[1] + '</h1>');
   });
   $('#miedo').on('click', function() {
+    $('.text').text(' ');
     apiCall(Object.values(movieData.miedo));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[2] + '</h1>');
   });
   $('#reflexion').on('click', function() {
+    $('.text').text(' ');
     apiCall(Object.values(movieData.reflexion));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[3] + '</h1>');
   });
   $('#romance').on('click', function() {
+    $('.text').text(' ');
     apiCall(Object.values(movieData.romance));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[4] + '</h1>');
   });
 });
