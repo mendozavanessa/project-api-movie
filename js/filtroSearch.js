@@ -36,13 +36,18 @@
       }
       function renderDetails() {
         console.log(codigo);
-        $('.list-group-item').text(' ');
-        console.log('brayan');
+        $('#results').text(' ');
         $('.images').text(' ');
         $.getJSON('http://www.omdbapi.com/?apikey=a498e26d&i=' + codigo).then(function(response) {
           console.log(response);
           var image = response.Poster;
+          var year = response.Year;
+          var director = response.Director;
+          var resumen = response.Plot;
           console.log(image);
+          $('.images').append('<span> Año de estreno: ' + year + '</span>')
+          $('.images').append('<span> Director: ' + director + '</span>')
+          $('.images').append('<p> Trama: ' + resumen + '</p>')
           if (image !== 'N/A') {
             $('.images').append('<img src="' + image + '"></img>');
           }
