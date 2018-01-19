@@ -1,141 +1,171 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <!-- estructura del header -->
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="logo col-md-6">
-            <div class="image">
-              <img class="" src="" alt="">
-            </div>
-            <h1>Pelimotion</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeliMotion</title>
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Roboto+Condensed" rel="stylesheet"> </head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+<body>
+  <!--NAVBAR-->
+  <nav class="container-fluid">
+    <div class="row">
+      <div class="navbar navbar-default nav-style">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand pull-right" href="#">
+              <p class="logo">
+                <img alt="Brand" class="logo-img" src="assets/img/movie.png">Pelimotion</p>
+            </a>
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-          <div class="nav-list pull-right" class="col-md-6  ">
-            <ul class="">
-              <li><a href="">Login</a></li>
-              <li><a href="">Sign up</a></li>
+          <!-- Menu List -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li class="active">
+                <a href="#">Ingresa</a>
+              </li>
+              <li>
+                <a href="#about">Registrate</a>
+              </li> -->
+              <li>
+                <a id="login" class=""><i class="fa fa-google-plus-square" aria-hidden="true"></i> Ingresa</a>              
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </header>
-    <!-- estructura de la seccion  -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="figure col-md-12">
-            <a href="" id="searchBtn" class="btn-alegria"><img src="" alt="">Alegría</a>
-            <a href="" id="searchBtn" class="btn-adrenalina"><img src="" alt="">Adrenalina</a>
-            <a href="" id="searchBtn" class="btn-romance"><img src="" alt="">Romance</a>
-            <a href="" id="searchBtn" class="btn-miedo"><img src="" alt="">Miedo</a>
-            <a href="" id="searchBtn" class="btn-aventura"><img src="" alt="">Aventura</a>
-            <a href="" id="searchBtn" class="btn-reflexion"><img src="" alt="">Reflexión</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- estructura 'resultado de búsqueda' -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="movie0 col-md-3"><img src="" alt=""></div>
-          <div class="movie1 col-md-3"><img src="" alt=""></div>
-          <div class="movie2 col-md-3"><img src="" alt=""></div>
-          <div class="movie3 col-md-3"><img src="" alt=""></div>
-        </div>
-        <div class="row">
-          <div class="movie4 col-md-3"><img src="" alt=""></div>
-          <div class="movie5 col-md-3"><img src="" alt=""></div>
-          <div class="movie6 col-md-3"><img src="" alt=""></div>
-          <div class="movie7 col-md-3"><img src="" alt=""></div>
-        </div>
-        <div class="row">
-          <div class="movie8 col-md-3"><img src="" alt=""></div>
-          <div class="movie9 col-md-3"><img src="" alt=""></div>
-          <div class="movie10 col-md-3"><img src="" alt=""></div>
-          <div class="movie11 col-md-3"><img src="" alt=""></div>
-        </div>
-      </div>
-    </section>
-    <!-- estructura 'buscar por filtro' -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-s-12">
-            <a href="" data-toggle="modal" data-target="#myModal">o selecciona tu propia pelicula</a>
-          </div>
-        </div>
-        <div class="row">
-          carrousel
-        </div>
-      </div>
-    </section>
-    <!-- estructura para modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Buscar</h4>
-            <div class="form-control">
-              <input class="col-md-11" type="text">
-              <span class="glyphicon glyphicon-search"></span>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="btn-group">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Año<span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Genero<span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Puntuación<span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>               
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Buscar</button>
-          </div>
-        </div>
-      </div>
     </div>
+  </nav>
+  <!--NAVBAR END-->
 
+  <!--FILTER SECTION-->
+  <div class="container">
+    <div class="row">
+      <p class="text-center title">¿Que emoción estas buscando?</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <ul class=" col-xs-12 list-inline text-center">
+          <li><a href=""><img class="emotion-pic" src="assets/img/alegría.png" alt=""></li></a> 
+          <li><a href=""><img class="emotion-pic" src="assets/img/aventura.png" alt=""></a></li>
+          <li><a href=""><img class="emotion-pic" src="assets/img/miedo.png" alt=""></a></li>
+          <li><a href=""><img class="emotion-pic" src="assets/img/reflexión.png" alt=""></a></li>
+          <li><a href=""><img class="emotion-pic" src="assets/img/romance.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <br>
+      <a href=""><p class="text-center"><u>O selecciona tu propia película</u></p></a>
+    </div>
+  </div>
+  <!--FILTER SECTION END-->
 
-    <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+  
+  <!--CAROUSEL SECTION-->
+  <div class="container">
+    <div class="row">
+      <h2>Últimos estrenos</h2>
+    </div>
+  </div>
+  <div class="color"> 
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class="carousel slide media-carousel" id="media">
+            <div class="carousel-inner" >
+              <div class="item  active">
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="thumbnail" href="#">
+                      <img alt="" src="http://placehold.it/250x350">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+              <a data-slide="next" href="#media" class="right carousel-control">›</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>   
+  <script type="text/javascript" src="vendors/jquery/js/jquery-3.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
 </html>

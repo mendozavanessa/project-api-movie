@@ -1,90 +1,54 @@
-$(document).ready('load', function() {
-  var searchBtn = $('#searchBtn');
-  // var btnAlegria = $('.btn-alegria');
-  // var btnAdrenalina = $('.btn-Adrenalina');
-  // var btnRomance = $('.btn-Romance');
-  // var btnMiedo = $('.btn-Miedo');
-  // var btnAventura = $('.btn-Aventura');
-  // var btnReflexión = $('.btn-Reflexión');
+$(document).ready(function() {
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+  // Initialize Firebase
+  var config = {
+    apiKey: 'AIzaSyBpuy4flU2csWxQXFDAYFt30RsufAnMPjA',
+    authDomain: 'pelimotion.firebaseapp.com',
+    databaseURL: 'https://pelimotion.firebaseio.com',
+    projectId: 'pelimotion',
+    storageBucket: 'pelimotion.appspot.com',
+    messagingSenderId: '597429938830'
+  };
+  firebase.initializeApp(config);
 
-  var arrayMovieAlegria = ['Duplex', 'Shrek', 'Shrek 2', 'Scary Movie', 'American Pie', 'Click'];
-  var arrayMovieAdrenalina = ['Die Hard', 'Rambo', 'Kill Bill: Vol. 1', 'Kill Bill: Vol. 2', 'Terminator 2', 'James Bond 007'];
-  var arrayMovieRomance = ['Titanic', '50 First Dates', 'Her', 'The Notebook', 'Ghost', 'The Wedding Singer'];
-  var arrayMovieMiedo = ['The Exorcist', 'It', 'The Babadook', 'It Follows', 'Damien: Omen II', 'The Conjuring'];
-  var arrayMovieAventura = ['Star Wars: The Last Jedi', 'Harry Potter and the Order of the Phoenix', 'The Lord of the Rings: The Fellowship of the Ring', 'Indiana Jones and the Last Crusade', 'Mad Max', 'Jurassic Park']
-  var arrayMovieReflexión = ['Forrest Gump', 'Eternal Sunshine of the Spotless Mind', 'Little Miss Sunshine', 'Big Fish', 'Silver Linings Playbook', 'The Bucket List'];
-  
-  searchBtn.click(searchMovieEmotion);
-  function searchMovieEmotion() {
-    var url = 'http://www.omdbapi.com/?i=' + arrayMovieAlegria[1] + '&apikey=79428951';
-    
-    $.ajax({
-      type: 'GET',
-      url: url,
-      success: function(data) {
-        console.log(data);
-      },
-      error: function(error) {
-        console.log('error', error);
-      }
+  var provider = new firebase.auth.GoogleAuthProvider();
+
+  // Función para guardar automáticamente
+  function save(user) {
+    var usuario = {
+      uid: user.uid,
+      username: user.displayName,
+      usermail: user.email,
+      userphoto: user.photoURL
+    };
+    firebase.database().ref('speakup/' + user.uid).set(usuario);
+  };
+
+  // Evento para el botón Inicia sesión
+  $('#login').on('click', function() {
+    firebase.auth().signInWithPopup(provider).then(function(result) {
+      save(result.user);
+      // Guardando en el localstorage
+      window.localStorage.setItem('name', result.user.displayName);
+      var name = window.localStorage.getItem('name');
+      // window.localStorage.setItem('photo', result.user.photoURL);
+      // var img = window.localStorage.getItem('photo');
+
+      window.localStorage.setItem('foto', result.user.photoURL);
+      var photo = window.localStorage.getItem('foto');
+      // window.location.href = 'views/speakup.html';
     });
-  }
+  });
 
-  // function data(response) {
-  //   var searchMovie = response.
-
-  // }
-  
-
+  var info;
+  var picture;
+  // function nueva(result) {
+  //   save(result.user);
+  //   info = $('#name').append('<h3>' + name + '</h3>');
+  //   picture = $('#root').append("<img src='" + result.user.photoURL + "' />");
+  //   console.log(result.user.displayName);
+  // };
 });
-
-// var movieArray = ['tt3896198&', 'tt4048272']
-// for (var i = 0; i < arrayMovieAlegria.length; i++) {
-// }
-
-//     var searchBtn = $('#searchBtn');
-//     var titleFld = $('#title');
-//     searchBtn.click(searchMovie);
-
-//     function searchMovie() {
-//       var titleText = titleFld.val();
-//       alert('searchMovie' + titleText);
-//       var url = 'http://www.omdbapi.com/?apikey=79428951&s=' + titleText;
-//       console.log(url);
-
-//       $.ajax({
-//         url: url,
-//         success: renderMovies,
-//         error: renderError,
-//       });
-//     }
-
-//     function renderMovies(response) {
-//       console.log(response);
-//       var movies = response.search;
-//       var resultsUl = $('#results');
-//       resultsUl.empty();
-
-//       for (var m in movies) {
-//         var movie = movies[m];
-//         var title = movie.Title;
-//         var imdbID = title.imdbID;
-//         var poster = imdbID.Poster;
-//         console.log([title, imdbID, poster]);
-//         var liMovie = $('<li class="list-group-item">');
-//         var posterImg = $('<img src="' + poster + '" width="50px">');
-//         liMovie.append(posterImg);
-//         liMovie.append(title);
-//         liMovie.click(renderDetails);
-//         resultsUl.append(liMovie);
-//       }
-
-//       function renderDetails() {
-//         console.log('render details');
-//       }
-//     }
-
-//     function renderError(error) {
-//       console.error(error);
-//     }
-
