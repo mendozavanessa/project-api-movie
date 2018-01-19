@@ -67,6 +67,7 @@
   <div class="container-fluid">
     <div class="row">
       <br>
+      <!-- data-toggle="modal" data-target="#myModal" -->
       <a href="views/filtroSearch.html"><p class="text-center"><u>O selecciona tu propia película</u></p></a>
     </div>
   </div>
@@ -108,7 +109,7 @@
   <!-- <div id="myModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
-       Modal content
+        Modal content
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -117,8 +118,10 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1"></label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre de la película">
+              <input id="title" class="form-control"type="text" name="" value="">
+              <button id="searchBtn" class="btn btn-primary btn-block" type="button" name="button">Search</button>
+              <ul id="results" class="list-group"></ul>
+              <h2>Details</h2>
             </div>
           <form>
           <p>Ingresa los datos de la película:</p>
@@ -166,7 +169,9 @@
   <script type="text/javascript" src="vendors/jquery/js/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/movie.js"></script>
   <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/filtroSearch.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
 

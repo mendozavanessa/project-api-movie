@@ -20,11 +20,12 @@
       console.log(movies);
       var resultsUl = $('#results');
       resultsUl.empty();
-      for (var m in movies) {
-        var movie = movies[m];
+      for (var i in movies) {
+        var movie = movies[i];
         var title = movie.Title;
         var poster = movie.Poster;
         var year = movie.Year;
+        var codigo = movie.imdbID;
         console.log([title, year, poster]);
         var liMovie = $('<li class="list-group-item"></li>');
         var posterImg = $('<img src = "' + poster + '"width="50px"/>');
@@ -34,7 +35,18 @@
         resultsUl.append(liMovie);
       }
       function renderDetails() {
-        console.log('render Details');
+        console.log(codigo);
+        $('.list-group-item').text(' ');
+        console.log('brayan');
+        $('.images').text(' ');
+        $.getJSON('http://www.omdbapi.com/?apikey=a498e26d&i=' + codigo).then(function(response) {
+          console.log(response);
+          var image = response.Poster;
+          console.log(image);
+          if (image !== 'N/A') {
+            $('.images').append('<img src="' + image + '"></img>');
+          }
+        });
       }
     }
     function renderError(error) {
