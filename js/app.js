@@ -51,4 +51,34 @@ $(document).ready(function() {
   //   picture = $('#root').append("<img src='" + result.user.photoURL + "' />");
   //   console.log(result.user.displayName);
   // };
+  var movieArrayData = Object.keys(movieData);
+  console.log(movieArrayData);
+  function apiCall(arr) {
+    for (var i = 0; i < arr.length; i++) {
+      console.log(arr);
+      $.getJSON('https://www.omdbapi.com/?t=' + encodeURI(arr[i]) + '&apikey=a498e26d').then(function(response) {
+        console.log(response);
+        var image = response.Poster;
+        console.log(image);
+        if (image !== 'N/A') {
+          $('.images').append('<img src="' + image + '"></img>');
+        }
+      });
+    }
+  }
+  $('#alegria').on('click', function() {
+    apiCall(Object.values(movieData.alegria));
+  });
+  $('#aventura').on('click', function() {
+    apiCall(Object.values(movieData.aventura));
+  });
+  $('#miedo').on('click', function() {
+    apiCall(Object.values(movieData.miedo));
+  });
+  $('#reflexion').on('click', function() {
+    apiCall(Object.values(movieData.reflexion));
+  });
+  $('#romance').on('click', function() {
+    apiCall(Object.values(movieData.romance));
+  });
 });
