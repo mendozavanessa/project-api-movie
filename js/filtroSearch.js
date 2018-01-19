@@ -33,6 +33,8 @@
         liMovie.append(title);
         liMovie.click(renderDetails);
         resultsUl.append(liMovie);
+      
+
       }
       function renderDetails() {
         console.log(codigo);
@@ -50,6 +52,7 @@
           $('.images').append('<p> Trama: ' + resumen + '</p>')
           if (image !== 'N/A') {
             $('.images').append('<img src="' + image + '"></img>');
+            $('.details').show();
           }
         });
       }

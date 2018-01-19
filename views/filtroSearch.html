@@ -2,30 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PeliMotion</title>
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>API Movie</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Roboto+Condensed" rel="stylesheet"> 
   </head>
   <body>
+    <!--NAVBAR-->
+  <nav class="container-fluid">
+    <div class="row">
+      <div class="navbar navbar-default nav-style">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand pull-right" href="#">
+              <p class="logo">
+                <img alt="Brand" class="logo-img" src="../assets/img/movie.png">Pelimotion</p>
+            </a>
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- Menu List -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li class="active">
+                <a href="#">Ingresa</a>
+              </li>
+              <li>
+                <a href="#about">Registrate</a>
+              </li> -->
+              <li>
+                <a id="login" class="login-size"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Ingresa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--NAVBAR END-->
+    
     <div class="container-fluid">
-      <h1>Busca tus peliculas a tu comidad</h1>
       <div class="row">
-        <div class="col-xs-6">
+        <div class="col-xs-12">
+            <h1>Busca películas a tu comodidad</h1>
+        </div>
+        <div class="col-md-6">
+          <div class=>
           <h2>Search</h2>
           <input id="title" class="form-control"type="text" name="" value="">
           <button id="searchBtn" class="btn btn-primary btn-block" type="button" name="button">Search</button>
           <ul id="results" class="list-group"></ul>
         </div>
+        </div>
         <div class="col-xs-6">
-          <h2>Details</h2>
+          <h2 class="details"hidden>Details</h2>
         </div>
         <div class="col-xs-6 images">
         </div>
-        <div class="slide-buttons container-flex-row">
-				<a href="../index.html" type="button" class="btn btn-success">
-					<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-				</a>
-			</div>
       </div>
     </div>
     <script type="text/javascript" src="../vendors/jquery/jquery-3.2.1.min.js"></script>

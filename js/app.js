@@ -62,7 +62,7 @@ $(document).ready(function() {
         var image = response.Poster;
         console.log(image);
         if (image !== 'N/A') {
-          $('.images').append('<img class="thumbnail" src="' + image + '"></img>');
+          $('.images').append('<div><div class="col-md-4"><img class="thumbnail" src="' + image + '"></img></div></div>');
         }
       });
     }
