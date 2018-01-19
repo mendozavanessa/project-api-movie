@@ -23,9 +23,16 @@ body {
   border-radius: 2px;
   padding: 5px;
 }
-.search-bar {
-  width: 16.5vw;
-}
+
 .modal-body {
   padding-bottom: 2.5em;
 }
+
+.input-group{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
