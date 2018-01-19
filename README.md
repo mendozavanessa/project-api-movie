@@ -1,5 +1,16 @@
 # HACKATON LABORATORIA: __PeliMotion__
 
+## INTRODUCCIÓN
+
+En la actualidad, hay muchas páginas que nos permiten tener acceso a nuestras películas favorita en cualquier momento y lugar, pero...
+
+¿y si no tienes idea de que película quieres ver? o ¿buscas esa película que te haga llorar a mares o te haga sentir miedo hasta de tu propia sombra?
+Pues para eso tienes a __PELIMOTION.__
+
+__PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuerdo a la emoción que deseen experimentar.
+
+___
+
 ## Equipo conformado por
 
 + RUTH MATOS
@@ -14,17 +25,6 @@
 + BOOTSTRAP
 + OMDB API
 + FIREBASE
-
-___
-
-## INTRODUCCIÓN
-
-En la actualidad, hay muchas páginas que nos permiten tener acceso a nuestras películas favorita en cualquier momento y lugar, pero...
-
-¿y si no tienes idea de que película quieres ver? o ¿buscas esa película que te haga llorar a mares o te haga sentir miedo hasta de tu propia sombra?
-Pues para eso tienes a __PELIMOTION.__
-
-__PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuerdo a la emoción que deseen experimentar.
 
 ___
 
