@@ -16,7 +16,6 @@ $(document).ready('load', function() {
   
   searchBtn.click(searchMovieEmotion);
   function searchMovieEmotion() {
-    var arrayMovieAlegria = ['Amor ciego', 'Big Mama', 'Shrek', 'Shrek 2', 'Los gemelos alborotados', 'La gran comedia', 'Scary Movie', 'Scary Movie 2', 'Scary Movie 3', 'The Disaster Artist', 'Toni Erdmann']
     var url = 'http://www.omdbapi.com/?i=' + arrayMovieAlegria[1] + '&apikey=79428951';
     
     $.ajax({
