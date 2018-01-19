@@ -1,14 +1,13 @@
 # HACKATON LABORATORIA: __PeliMotion__
 
-
-## Equipo conformado por:
+## Equipo conformado por
 
 + RUTH MATOS
 + AURORA VASQUEZ
 + VANESSA MENDOZA
 + AYLIN ESPICHAN
 
-### HERRAMIENTAS UTILIZADAS:
+## Herramientas Utilizadas
 
 + HTML5
 + CSS3
