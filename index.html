@@ -3,27 +3,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Search</title>
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <div class="container-fluid">
-      <h1>OMDB API</h1>
-      <div class="row">
-        <div class="col-xs-6">
-          <h2>Search</h2>
-          <input id="title" type="text">
-          <button id="searchBtn">Search movie</button>
-          <ul id="results"></ul>
+    <!-- estructura del header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="logo col-md-6">
+            <div class="image">
+              <img class="" src="" alt="">
+            </div>
+            <h1>Pelimotion</h1>
+          </div>
+          <div class="nav-list pull-right" class="col-md-6  ">
+            <ul class="">
+              <li><a href="">Login</a></li>
+              <li><a href="">Sign up</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-xs-6">
-          <h2>Details</h2>
+      </div>
+    </header>
+    <!-- estructura de la seccion  -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="figure col-md-12">
+            <a href="" id="searchBtn" class="btn-alegria"><img src="" alt="">Alegría</a>
+            <a href="" id="searchBtn" class="btn-adrenalina"><img src="" alt="">Adrenalina</a>
+            <a href="" id="searchBtn" class="btn-romance"><img src="" alt="">Romance</a>
+            <a href="" id="searchBtn" class="btn-miedo"><img src="" alt="">Miedo</a>
+            <a href="" id="searchBtn" class="btn-aventura"><img src="" alt="">Aventura</a>
+            <a href="" id="searchBtn" class="btn-reflexion"><img src="" alt="">Reflexión</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- estructura 'resultado de búsqueda' -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="movie0 col-md-3"><img src="" alt=""></div>
+          <div class="movie1 col-md-3"><img src="" alt=""></div>
+          <div class="movie2 col-md-3"><img src="" alt=""></div>
+          <div class="movie3 col-md-3"><img src="" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="movie4 col-md-3"><img src="" alt=""></div>
+          <div class="movie5 col-md-3"><img src="" alt=""></div>
+          <div class="movie6 col-md-3"><img src="" alt=""></div>
+          <div class="movie7 col-md-3"><img src="" alt=""></div>
+        </div>
+        <div class="row">
+          <div class="movie8 col-md-3"><img src="" alt=""></div>
+          <div class="movie9 col-md-3"><img src="" alt=""></div>
+          <div class="movie10 col-md-3"><img src="" alt=""></div>
+          <div class="movie11 col-md-3"><img src="" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <!-- estructura 'buscar por filtro' -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-s-12">
+            <a href="" data-toggle="modal" data-target="#myModal">o selecciona tu propia pelicula</a>
+          </div>
+        </div>
+        <div class="row">
+          carrousel
+        </div>
+      </div>
+    </section>
+    <!-- estructura para modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Buscar</h4>
+            <div class="form-control">
+              <input class="col-md-11" type="text">
+              <span class="glyphicon glyphicon-search"></span>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="btn-group">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Año<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genero<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Puntuación<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>               
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Buscar</button>
+          </div>
         </div>
       </div>
     </div>
 
 
     <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+    <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
