@@ -51,14 +51,5 @@ $(document).ready(function() {
   //   picture = $('#root').append("<img src='" + result.user.photoURL + "' />");
   //   console.log(result.user.displayName);
   // };
-
-  // funcionalidad aurora
-  var arrayMovieAlegria = ['Duplex', 'Shrek', 'Shrek 2', 'Scary Movie', 'American Pie', 'Click'];
-  var arrayMovieAdrenalina = ['Die Hard', 'Rambo', 'Kill Bill: Vol. 1', 'Kill Bill: Vol. 2', 'Terminator 2', 'James Bond 007'];
-  var arrayMovieRomance = ['Titanic', '50 First Dates', 'Her', 'The Notebook', 'Ghost', 'The Wedding Singer'];
-  var arrayMovieMiedo = ['The Exorcist', 'It', 'The Babadook', 'It Follows', 'Damien: Omen II', 'The Conjuring'];
-  var arrayMovieAventura = ['Star Wars: The Last Jedi', 'Harry Potter and the Order of the Phoenix', 'The Lord of the Rings: The Fellowship of the Ring', 'Indiana Jones and the Last Crusade', 'Mad Max', 'Jurassic Park']
-  var arrayMovieReflexión = ['Forrest Gump', 'Eternal Sunshine of the Spotless Mind', 'Little Miss Sunshine', 'Big Fish', 'Silver Linings Playbook', 'The Bucket List'];
-  
-  
+ 
 });
