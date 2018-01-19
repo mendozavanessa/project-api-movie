@@ -1,12 +1,4 @@
-# HACKATON LABORATORIA: __PeliMotion__
-
-
-## Equipo conformado por:
-
-+ RUTH MATOS
-+ AURORA VASQUEZ
-+ VANESSA MENDOZA
-+ AYLIN ESPICHAN
+# HACKATON LABORATORIA: __PeliMotion__  
 
 ## INTRODUCCIÓN
 
@@ -17,7 +9,24 @@ Pues para eso tienes a __PELIMOTION.__
 
 __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuerdo a la emoción que deseen experimentar.
 
----
+___
+
+## Equipo conformado por
+
++ RUTH MATOS
++ AURORA VASQUEZ
++ VANESSA MENDOZA
++ AYLIN ESPICHAN
+
+## Herramientas Utilizadas
+
++ HTML5
++ CSS3
++ BOOTSTRAP
++ OMDB API
++ FIREBASE
+
+___
 
 ### PLANIFICACIÓN
 
@@ -72,6 +81,25 @@ __PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuer
 + Por último creamos un [tablero][trello] en trello para mantener un registro de las tareas que iremos realizando cada una. Además tambien se creo el repositorio oficial, hecho por Aurora Vasquez.
 
 [trello]: https://trello.com/b/zDPbf5a3/plan-de-acciones-hackaton
+
+#### Segundo Día
+
++ Tuvimos la presentación de nuestro primer avance, donde recibimos feedback. El cual aplicamos para la planificación del día.
+
++ Aurora y Vanessa: investigaran el API de OMDB, como obtener sus datos y poder mostrarlo en nuestro producto.
+
++ Ruth y Aylin: realizaron una busqueda de estilos, entre colores e imagenes, tambien realizaron la elección del logo de nuestro producto.
+
++ Al final del día realizamos la repartición del trabajo, tanto el maquetado como la funcionalidad.
+
+
+#### Tercer Día
+
++ Durante el tercer Día iniciamos realizando los maquetados, de acuerdo a nuestro prototipo, en el avance estaban encargadas Ruth Matos y Aylin Espichan.
+
++ En paralelo se realizo el desarrollo de la funcionalidad por parte de Vanessa Mendoza y Aurora Vasquez.
+
++ También empezamos a fusionar trabajos, en busca de posibles conflictos que se han ido corrigiendo hasta el momento.
 
 ### EXPECTATIVAS
 
