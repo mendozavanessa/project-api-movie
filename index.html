@@ -1,42 +1,178 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Movie</title>
-  </head>
-  <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <div class="col-md-6 logo">
-              <img class="img-responsive inline-block" src="assets/img/logo.jpg" alt="logo">
-              <h1 class="inline-block">Pelimotion</h1>
-            </div>
-            <div class="col-md-6 col-xs-6">
-              <ul class="menu">
-                <li class="inline-block">Login</li>
-                <li class="inline-block">Sign Up</li>
-              </ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeliMotion</title>
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Righteous|Roboto|Roboto+Condensed" rel="stylesheet"> </head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+<body>
+  <!--NAVBAR-->
+  <nav class="container-fluid">
+    <div class="row">
+      <div class="navbar navbar-default nav-style">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand pull-right" href="#">
+              <p class="logo">
+                <img alt="Brand" class="logo-img" src="assets/img/movie.png">Pelimotion</p>
+            </a>
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+              aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <!-- Menu List -->
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li class="active">
+                <a href="#">Ingresa</a>
+              </li>
+              <li>
+                <a href="#about">Registrate</a>
+              </li> -->
+              <li>
+                <a id="login" class="login-size"><i class="fa fa-google-plus-square" aria-hidden="true"></i> Ingresa</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--NAVBAR END-->
+
+  <!--FILTER SECTION-->
+  <div class="container">
+    <div class="row">
+      <p class="text-center title">¿Que emoción estas buscando?</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <ul class=" col-xs-12 list-inline text-center">
+          <li><img id="alegria" class="emotion-pic" src="assets/img/alegría.png" alt=""></li>
+          <li><img id="aventura" class="emotion-pic" src="assets/img/aventura.png" alt=""></li>
+          <li><img id="miedo" class="emotion-pic" src="assets/img/miedo.png" alt=""></li>
+          <li><img id="reflexion" class="emotion-pic" src="assets/img/reflexión.png" alt=""></li>
+          <li><img id="romance" class="emotion-pic" src="assets/img/romance.png" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <br>
+      <!-- data-toggle="modal" data-target="#myModal" -->
+      <a href="views/filtroSearch.html"><p class="text-center"><u>O selecciona tu propia película</u></p></a>
+    </div>
+  </div>
+  <!--FILTER SECTION END-->
+
+
+  <!--CAROUSEL SECTION-->
+  <div class="container">
+    <div class="row">
+      <h2>Últimos estrenos</h2>
+    </div>
+  </div>
+  <div class="color">
+    <div class="container">
+      <div class='row'>
+        <div class='col-md-12'>
+          <div class="carousel slide media-carousel" id="media">
+            <div class="carousel-inner" >
+              <div class="item  active">
+                <div class="row">
+                  <div class="col-md-12 flex text">
+
+                  </div>
+                  <div class="col-md-12 images flex"></div>
+                </div>
+              </div>
+              <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+              <a data-slide="next" href="#media" class="right carousel-control">›</a>
             </div>
           </div>
         </div>
-       </div>
-  	</header>
-  	<section>
-    </section>
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <p>Copyright ©2018  -  Privacidad  -  Términos de Servicio  -  FAQ  -  Contactar  -  Vista móvil  -  Vista tablet</p>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL SECTION  -->
+  <div class="container">
+
+  </div>
+  <!-- <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        Modal content
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">¿Que pelicula quieres ver?</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <input id="title" class="form-control"type="text" name="" value="">
+              <button id="searchBtn" class="btn btn-primary btn-block" type="button" name="button">Search</button>
+              <ul id="results" class="list-group"></ul>
+              <h2>Details</h2>
+            </div>
+          <form>
+          <p>Ingresa los datos de la película:</p>
+          <div class="row">
+            <div class="col-md-4">
+              <select name="city" id="city" class="form-control" readonly>
+                <option>Año</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select name="city" id="city" class="form-control" readonly>
+                <option>Género</option>
+                <option>Drama</option>
+                <option>Comedia</option>
+                <option>Acción</option>
+                <option>Romance</option>
+
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select name="city" id="city" class="form-control" readonly>
+                  <option>Puntuación</option>
+                  <option>Puntuación</option>
+                  <option>Puntuación</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-center"><a class="btn btn-primary" href="#" role="button">Buscar</a></p>
+            </div>
           </div>
         </div>
-       </div>
-    </footer>
-    <script type="text/javascript" src="vendors/jquery/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
-  </html>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div> -->
+  <script type="text/javascript" src="vendors/jquery/js/jquery-3.2.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/movie.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/filtroSearch.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
