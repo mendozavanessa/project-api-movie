@@ -6,6 +6,11 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+.input-group input {
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  padding: 10px;
+}
 .search-options ul {
   list-style: none;
 }
@@ -19,5 +24,8 @@ body {
   padding: 5px;
 }
 .search-bar {
-  width: 60vw;
+  width: 16.5vw;
+}
+.modal-body {
+  padding-bottom: 2.5em;
 }
