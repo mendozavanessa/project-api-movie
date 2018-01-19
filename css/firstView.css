@@ -68,9 +68,11 @@
 .favorites {
   font-size: 30px;
   padding: 0.5em;
+  text-decoration: none;
 }
 .favorites span {
   color: #467FD7;
+  padding: 0.5em;
 }
 /* Media queries */
 @media (min-width: 768px){
