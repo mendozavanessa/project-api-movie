@@ -39,7 +39,7 @@ body {
 .emotion-pic{
   width: 1.8em;
 }
-.search {
+.selection-film {
   color: #000;
   text-shadow: 1px 1px #646c6e;
   text-decoration-line: none;
@@ -47,7 +47,7 @@ body {
   -webkit-transition: font-size 2s;
   transition: font-size ease 4s;
 }
-.search:hover {
+.selection-film:hover {
   color: #000;
   font-size: 1.8em;
   font-weight: 800;
@@ -86,15 +86,6 @@ body {
   border: 2px solid yellow;
   background-color: black;
 }
-.selection-film {
-  text-decoration: none;
-  color: black;
-}
-.selection-film:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
 .media-carousel .carousel-control.left
 {
   left:.3em;
