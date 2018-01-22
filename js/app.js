@@ -72,9 +72,9 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.alegria));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[0] + '</h1>');
   });
-  $('#aventura').on('click', function() {
+  $('#adrenalina').on('click', function() {
     $('.text').text(' ');
-    apiCall(Object.values(movieData.aventura));
+    apiCall(Object.values(movieData.adrenalina));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[1] + '</h1>');
   });
   $('#miedo').on('click', function() {
@@ -91,5 +91,10 @@ $(document).ready(function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.romance));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[4] + '</h1>');
+  });
+  $('#aventura').on('click', function() {
+    $('.text').text(' ');
+    apiCall(Object.values(movieData.aventura));
+    $('.text').append('<h1> Peliculas que causan ' + movieArrayData[5] + '</h1>');
   });
 });

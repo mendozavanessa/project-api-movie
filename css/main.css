@@ -27,13 +27,13 @@
   font-size: 1.5em;
 }
 .emotion-pic{
-  width: 3.5em;
+  width: 1.8em;
 }
 /* carousel */
 .color{
   background:#467FD7;
   margin-bottom: 0;
-  padding-top: 1.5em;  
+  padding-top: 1.5em;
 }
 
 @media (min-width: 768px){
@@ -43,4 +43,4 @@
   .title{
     font-size: 2.5em;
   }
-} 
+}
