@@ -72,6 +72,7 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.alegria));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[0] + '</h1>');
     $('.slider').hide();
+    $('.title').hide();
   });
   $('#alegria').on('mouseover', function() {
     $('.carita1').show();
@@ -89,6 +90,7 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.adrenalina));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[1] + '</h1>');
     $('.slider').hide();
+    $('.title').hide();
   });
   $('#adrenalina').on('mouseover', function() {
     $('.carita2').show();
@@ -104,6 +106,7 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.miedo));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[2] + '</h1>');
     $('.slider').hide();
+    $('.title').hide();
   });
   $('#miedo').on('mouseover', function() {
     $('.carita3').show();
@@ -119,6 +122,7 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.reflexion));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[3] + '</h1>');
     $('.slider').hide();
+    $('.title').hide();
   });
   $('#reflexion').on('mouseover', function() {
     $('.carita4').show();
@@ -134,6 +138,7 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.romance));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[4] + '</h1>');
     $('.slider').hide();
+    $('.title').hide();
   });
   $('#romance').on('mouseover', function() {
     $('.carita5').show();
@@ -149,6 +154,7 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.aventura));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[5] + '</h1>');
     $('.slider').hide();
+    $('.title').hide();
   });
   $('#aventura').on('mouseover', function() {
     $('.carita6').show();
