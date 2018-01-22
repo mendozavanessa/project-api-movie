@@ -72,29 +72,83 @@ $(document).ready(function() {
     apiCall(Object.values(movieData.alegria));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[0] + '</h1>');
   });
+  $('#alegria').on('mouseover', function() {
+    $('.carita1').show();
+    $('.carita1').addClass('efecto-carita');
+    // $('ul.list-inline>li>span').addClass('show');
+  });
+  $('#alegria').on('mouseout', function() {
+    $('.carita1').hide();
+    // $('ul.list-inline>li>span').addClass('show');
+  });
+
+
   $('#adrenalina').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.adrenalina));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[1] + '</h1>');
   });
+  $('#adrenalina').on('mouseover', function() {
+    $('.carita2').show();
+    $('.carita2').addClass('efecto-carita');
+  });
+  $('#adrenalina').on('mouseout', function() {
+    $('.carita2').hide();
+  });
+
+
   $('#miedo').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.miedo));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[2] + '</h1>');
   });
+  $('#miedo').on('mouseover', function() {
+    $('.carita3').show();
+    $('.carita3').addClass('efecto-carita');
+  });
+  $('#miedo').on('mouseout', function() {
+    $('.carita3').hide();
+  });
+
+
   $('#reflexion').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.reflexion));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[3] + '</h1>');
   });
+  $('#reflexion').on('mouseover', function() {
+    $('.carita4').show();
+    $('.carita4').addClass('efecto-carita');
+  });
+  $('#reflexion').on('mouseout', function() {
+    $('.carita4').hide();
+  });
+
+
   $('#romance').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.romance));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[4] + '</h1>');
   });
+  $('#romance').on('mouseover', function() {
+    $('.carita5').show();
+    $('.carita5').addClass('efecto-carita');
+  });
+  $('#romance').on('mouseout', function() {
+    $('.carita5').hide();
+  });
+
+
   $('#aventura').on('click', function() {
     $('.text').text(' ');
     apiCall(Object.values(movieData.aventura));
     $('.text').append('<h1> Peliculas que causan ' + movieArrayData[5] + '</h1>');
+  });
+  $('#aventura').on('mouseover', function() {
+    $('.carita6').show();
+    $('.carita6').addClass('efecto-carita');
+  });
+  $('#aventura').on('mouseout', function() {
+    $('.carita6').hide();
   });
 });

@@ -35,6 +35,17 @@
   margin-bottom: 0;
   padding-top: 1.5em;
 }
+.efecto-carita {
+  color: red;
+  border: 1px solid blue;
+}
+.selection-film {
+  text-decoration: none;
+}
+.selection-film:hover {
+  text-decoration: underline;
+  color: blue;
+}
 
 @media (min-width: 768px){
   .emotion-pic{
