@@ -21,6 +21,9 @@
 .navbar-default .navbar-nav>li>a {
   color: #fff;
 }
+.icon-bar{
+  color: #fff;
+}
 
 /* filter */
 .title{
@@ -34,6 +37,30 @@
   background:#467FD7;
   margin-bottom: 0;
   padding-top: 1.5em;
+}
+
+.media-carousel .carousel-control.left 
+{
+  left:.3em;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 7em;
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right:.3em;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 7em;
 }
 
 @media (min-width: 768px){
