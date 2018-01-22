@@ -1,17 +1,21 @@
 *{
   font-family: 'Roboto', sans-serif;
 }
+body {
+  background: #f7f7f7;
+}
 /* Navbar */
 .navbar-header{
   padding-bottom: 1.5em;
 }
 .nav-style{
-  background: #467FD7;
+  background: #000;
 }
 .logo{
   font-family: 'Righteous', cursive;
   font-size: 1.8em;
   color: #fff;
+  text-shadow: 2px 2px 8px #fff;
 }
 .logo-img{
   height: 7vh;
@@ -25,17 +29,53 @@
 /* filter */
 .title{
   font-size: 1.5em;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 2px 2px #646c6e
 }
 .emotion-pic{
   width: 1.8em;
 }
+.search {
+  color: #000;
+  text-shadow: 1px 1px #646c6e;
+  text-decoration-line: none;
+  font-size: 1.4em;
+  -webkit-transition: font-size 2s;
+  transition: font-size ease 4s;
+}
+.search:hover {
+  color: #000;
+  font-size: 1.8em;
+  font-weight: 800;
+  text-decoration-line: underline;
+}
 /* carousel */
 .color{
-  background:#467FD7;
+  background: #646c6e;
   margin-bottom: 0;
   padding-top: 1.5em;
 }
-
+/* Search Filter */
+.text {
+  color: #000;
+  font-weight: 800;
+  text-shadow: 2px 2px #646c6e;
+}
+/* Search button*/
+.btn {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  transition: font-size ease 3s;
+  -webkit-transition: background ease 1s;
+}
+.btn:hover {
+  background:#fff;
+  border: 1px solid #000;
+  font-size: 1.2em;
+  color: #000;
+}
 @media (min-width: 768px){
   .emotion-pic{
     width: 7em;
