@@ -1,4 +1,11 @@
-# HACKATON LABORATORIA: __PeliMotion__  
+# PELIMOTION
+
+Pelimotion se enfoca en brindar a nuestros usuario recomendaciones, de acuerdo a la emoción que deseen experimentar.
+
+![image](https://user-images.githubusercontent.com/32309424/36493228-1e0e57ce-16fd-11e8-9467-3db554b0ff4c.png)
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)  
 
 ## INTRODUCCIÓN
 
@@ -7,9 +14,6 @@ En la actualidad, hay muchas páginas que nos permiten tener acceso a nuestras p
 ¿y si no tienes idea de que película quieres ver? o ¿buscas esa película que te haga llorar a mares o te haga sentir miedo hasta de tu propia sombra?
 Pues para eso tienes a __PELIMOTION.__
 
-__PELIMOTION__ se enfoca en brindar a nuestros usuario recomendaciones, de acuerdo a la emoción que deseen experimentar.
-
-___
 
 ## Equipo conformado por
 
